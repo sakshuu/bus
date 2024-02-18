@@ -1,0 +1,21 @@
+.card-reservation{
+    border: 3px solid black;
+}
+
+.t-dark{
+    font-weight: 800;
+}
+
+.f-fonts{
+font-size: 12px;
+}
+
+.bordered-table th,
+.bordered-table td {
+  border: 1px solid #000; 
+}
+
+.ul.conditions {
+    list-style-type: circle;
+    color: #000;
+  }
