@@ -6,3 +6,6 @@ export { default as plug } from "./plug.svg";
 export { default as seat } from "./seat.png";
 export { default as wifi } from "./wifi.svg";
 export { default as chairs } from "./chairs.png";
+export { default as covid } from "./covid.png";
+export { default as live_track } from "./live_track.png";
+export { default as qr } from "./qr.png";
