@@ -1,18 +1,3 @@
-// import React from 'react'
-
-// const Footer = () => {
-//   return <>
-//   <footer style={{backgroundColor:'#404040'}} className='p-4'>
-//     <div className="container">
-
-//     <hr style={{color:'white'}}/>
-//     <p style={{color:'white'}}>Copyrights2024</p>
-//     </div>
-//   </footer>
-//   </>
-// }
-
-// export default Footer
 
 
 import React from 'react';

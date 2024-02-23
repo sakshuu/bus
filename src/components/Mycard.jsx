@@ -30,7 +30,6 @@ const Mycard = () => {
     {
         data.map(item => 
             <div className="col-md-4 col-sm-6">
-  {/* <div className="card p-4 m-4" style={{boxShadow:'2px 2px 2px 2px #A9A9A9'}}> */}
   <div className="card p-3" style={{boxShadow:'2px 2px 2px 2px #E8E8E8'}}>
     <div className="d-flex gap-2">
 

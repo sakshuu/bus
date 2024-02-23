@@ -13,7 +13,7 @@ const BusSchedule = () => {
   return (
     <>
       <div className="container booking-container">
-        <div className="row">
+        <div className="row" style={{marginBottom:'100px'}}>
           <div className="col-md-3">
             <div className="filter">
               <div>Filter</div>

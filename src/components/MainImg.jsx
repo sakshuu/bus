@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { bus_home } from "../assets/img";
 import "../assets/css/busSchedule.css";
 import { useForm } from "react-hook-form";
@@ -6,12 +6,16 @@ import { BusSearch } from "../redux/busSchedule/busAction";
 import { useDispatch } from "react-redux";
 import BusSchedule from "./BusSchedule";
 import { toast } from "react-toastify";
+import { covid, live_track, qr } from '../assets/img'
+import Mycard from "./Mycard";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 const MainImg = () => {
+  const [showFooter, setShowFooter] = useState(false);
+  
   const {
     register,
     handleSubmit,
@@ -53,6 +57,39 @@ const MainImg = () => {
         });
       });
   };
+ 
+
+  useEffect(() => {
+    function handleScroll() {
+      const isBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setShowFooter(isBottom);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const data =  [
+    {   
+          id:"1",
+          img:covid,
+          title:'COVID-19 Travel Update',
+          desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque non culpa minus pariatur."
+    },
+    {   
+          id:"2",
+          img:qr,
+          title:'Download our App',
+          desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque non culpa minus pariatur earum ab."
+    },
+    {   
+          id:"1",
+          img:live_track,
+          title:'Live Tracking',
+          desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque non culpa minus pariatur earum ab."
+    }
+        ]
   return (
     <>
       <form onSubmit={handleSubmit(onBusSearch)}>
@@ -214,7 +251,63 @@ const MainImg = () => {
         </div>
       </form>
 
+
+
+{/* cards start */}
+      <div className="container" style={{marginTop:'100px', marginBottom:'100px'}} >
+<div className="row">
+  {
+      data.map(item => 
+          <div className="col-md-4 col-sm-6">
+<div className="card p-3" style={{boxShadow:'2px 2px 2px 2px #E8E8E8'}}>
+  <div className="d-flex gap-2">
+
+<div><img src={item?.img} alt="" width={130} /></div>
+<div>
+  <p style={{fontWeight:'bold'}}>{item.title}</p>
+  <p>{item?.desc}</p>
+</div>
+  </div>
+
+</div>
+</div>
+          )
+}
+</div>
+          </div>
+{/* card end */}
+
+
       <BusSchedule />
+
+
+      {/* footer start */}
+      {/* <footer style={{ backgroundColor: '#404040', position: 'fixed', left: 0, bottom: 0, width: '100%', zIndex: 1000 }} className='pt-3 pb-1'>
+      <div className="container">
+        <hr style={{ color: 'white' }} />
+        <div className='d-flex  justify-content-between' style={{ color: 'white' }}>
+        <span >Copyrights 2024. last update on 2/21/2024</span>
+        <span>Privacy Police</span>
+        <span>terms and conditions</span>
+        </div>
+      </div>
+    </footer> */}
+          {showFooter && (
+        <footer style={{ backgroundColor: '#404040', position: 'fixed', left: 0, bottom: 0, width: '100%', zIndex: 1000 }} className='pt-3 pb-1 mt-4'>
+          <div className="container">
+            <hr style={{ color: 'white' }} />
+            <div className='d-flex  justify-content-between' style={{ color: 'white' }}>
+              <span>Copyrights 2024. Last updated on 2/21/2024</span>
+              <span>Privacy Policy</span>
+              <span>Terms and Conditions</span>
+            </div>
+          </div>
+        </footer>
+      )}
+    {/* </div> */}
+  );
+
+    {/* footer end */}
     </>
   );
 };
