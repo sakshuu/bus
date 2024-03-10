@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import BusSchedule from "../../components/BusSchedule";
 import MainImg from "../../components/MainImg";
 
-const SignIn = ({setShowbusComponent}) => {
+const SignIn = () => {
   const [loginError, setLoginError] = useState("");
  
   
@@ -21,7 +21,8 @@ const SignIn = ({setShowbusComponent}) => {
   const dispatch = useDispatch();
 
   const onSubmit = (data) => {
-    setShowbusComponent(true)
+    console.log("kluj");
+    // setShowbusComponent()
     // const payload = {
     //   emailId: data.mobileNumber,
     //   mobileNumber: data.mobileNumber,
@@ -30,46 +31,46 @@ const SignIn = ({setShowbusComponent}) => {
     // console.log(data);
 
     // dispatch(loginUser(payload))
-      .then((action) => {
-        debugger;
-        const data = action.payload;
-        if (data && data.returnCode === 200) {
-          // setShowbusComponent(true);
-          toast.success("User login successful", {
-            position: "top-right",
-            autoClose: 1000,
-          });
-        } else if (
-          data &&
-          data.message === `Entered Mobile Number / Email is not registered.`
-        ) {
-          setLoginError("Entered Mobile Number / Email is not registered.");
-          toast.error(`${data.message}`, {
-            position: "top-right",
-            style: {
-              backgroundColor: "white",
-              color: "red",
-            },
-          });
+      // .then((action) => {
+      //   debugger;
+      //   const data = action.payload;
+      //   if (data && data.returnCode === 200) {
+      //     // setShowbusComponent(true);
+      //     toast.success("User login successful", {
+      //       position: "top-right",
+      //       autoClose: 1000,
+      //     });
+      //   } else if (
+      //     data &&
+      //     data.message === `Entered Mobile Number / Email is not registered.`
+      //   ) {
+      //     setLoginError("Entered Mobile Number / Email is not registered.");
+      //     toast.error(`${data.message}`, {
+      //       position: "top-right",
+      //       style: {
+      //         backgroundColor: "white",
+      //         color: "red",
+      //       },
+      //     });
 
-          setShowbusComponent(false);
-        } else if (data && data.message === `Invalid Credentials, Try again!`) {
-          setLoginError(`Invalid Credentials, Try again!`);
-          toast.error(`${data.message}`, {
-            position: "top-right",
-            style: {
-              backgroundColor: "white",
-              color: "red",
-            },
-          });
-        } else {
-          setLoginError(data.message || "Login failed.");
-        }
-      })
-      .catch((error) => {
-        console.error(error.message);
-        setLoginError(` ${error.message}`);
-      });
+      //     setShowbusComponent(false);
+      //   } else if (data && data.message === `Invalid Credentials, Try again!`) {
+      //     setLoginError(`Invalid Credentials, Try again!`);
+      //     toast.error(`${data.message}`, {
+      //       position: "top-right",
+      //       style: {
+      //         backgroundColor: "white",
+      //         color: "red",
+      //       },
+      //     });
+      //   } else {
+      //     setLoginError(data.message || "Login failed.");
+      //   }
+      // })
+      // .catch((error) => {
+      //   console.error(error.message);
+      //   setLoginError(` ${error.message}`);
+      // });
 
     // });
   };

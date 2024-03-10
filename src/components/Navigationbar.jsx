@@ -1,4 +1,3 @@
-
 import React from "react";
 import { msrtc_icon } from "../assets/img";
 import "./../assets/css/mynavbar.css";
@@ -60,14 +59,52 @@ const Navigationbar = () => {
                   Login
                 </a>
               </li>
+              <li class="nav-item dropdown">
+                  <a
+                    class="nav-link  active dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-person-fill"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/profile">
+                        My Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-bs-target="#passwordModal"
+                        data-bs-toggle="modal"
+                      >
+                        Change Password
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item"
+                      //  onClick={handleLogout}
+                      >
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      {showbusComponent ? (
+      {/* {showbusComponent ? ( */}
         <MainImg />
-      ) : (
+      {/* ) : ( */}
 
       <div
         class="modal fade"
@@ -83,13 +120,15 @@ const Navigationbar = () => {
                 <div className="background-adds"></div>
               </div>
               <div className="col-md-7 sm-12">
-                <SignIn setShowbusComponent={setShowbusComponent}/>
+                <SignIn 
+                // setShowbusComponent={setShowbusComponent}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
- )}
+ {/* )} */}
       <div
         class="modal fade"
         id="ModelSignUp"
