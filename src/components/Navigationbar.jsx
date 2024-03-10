@@ -57,27 +57,45 @@ const Navigationbar = () => {
                   data-bs-target="#exampleModal"
                 >
                   Login
-                </a>
+                </a>              
               </li>
+
+              <div class="dropdown">
+  <a class="dropdown-toggle nav-link active" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    My Bookings
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item drop-text" href="#">Action</a></li>
+    <hr className="dropdown-divider" />
+    
+    <li><a class="dropdown-item drop-text" href="#">Another action</a></li>
+  </ul>
+</div>
+
               <li class="nav-item dropdown">
+
+                {/* <div className="d-flex"> */}
                   <a
-                    class="nav-link  active dropdown-toggle"
+                    class="nav-link profile-icon  active dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                  >
+                    >
+                    {/* <div className="person-fill"> */}
                     <i class="bi bi-person-fill"></i>
+                    {/* </div> */}
                   </a>
+                    {/* </div> */}
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="/profile">
+                      <a class="dropdown-item drop-text" href="/profile">
                         My Profile
                       </a>
                     </li>
                     <li>
                       <a
-                        class="dropdown-item"
+                        class="dropdown-item drop-text"
                         href="#"
                         data-bs-target="#passwordModal"
                         data-bs-toggle="modal"
@@ -86,10 +104,10 @@ const Navigationbar = () => {
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      {/* <hr class="dropdown-divider" /> */}
                     </li>
                     <li>
-                      <a class="dropdown-item"
+                      <a class="dropdown-item drop-text"
                       //  onClick={handleLogout}
                       >
                         Logout
@@ -97,6 +115,7 @@ const Navigationbar = () => {
                     </li>
                   </ul>
                 </li>
+
             </ul>
           </div>
         </div>

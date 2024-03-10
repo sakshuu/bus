@@ -1,8 +1,20 @@
-.bi-person-fill {
+.profile-icon {
+} 
+
+.bi-person-fill{
+  margin: 1px !important;
+  padding: 2px 5px 2px 5px;
+  /* padding-left: 5px !important; */
+  /* padding-right: 5px !important; */
+  width: 10px !important;
   border: 1px solid black;
-  border-radius: 50%;
-  padding: 3px;
-  font-size: 20px;
+  border-radius: 100% !important; 
+  font-size: 17px;
+  text-align: center;
+}
+
+.drop-text{
+  font-size: 12px !important;
 }
 .modal {
   margin: 0px !important;
