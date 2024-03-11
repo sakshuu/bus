@@ -34,7 +34,7 @@
   background-color: rgb(220, 213, 213);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 460px) {
   .modal-content {
     margin-left: 0px;
     min-height: 100vh !important;

@@ -27,7 +27,7 @@
   min-width: 100px !important;
 }
 .card-container{
-  max-width: 200px !important;
+  min-width: 200px !important;
 }
 .fonts {
   font-size: 12px !important;
@@ -291,7 +291,7 @@ padding: 10px !important;
 
 
 
-@media (max-width:1280px ), ( max-width:1000px) {
+@media (max-width:1280px ), ( max-width:2000px) {
   .sort-nav{
     margin-top: 14px !important;
   }
