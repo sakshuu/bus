@@ -76,9 +76,9 @@ const CardTickets = () => {
                                       <div className="booking-card">
                                         <div className="row mt-4">
                                           <div className="col-md-6 col-sm-12">
-                                            <h5 className="stars">ORDINARY EXPRESS</h5>
-                                            <p className="fonts ">
-                                              <i class="bi bi-star-fill"></i> 2.5 (+200 Ratings)
+                                            <h5 className="stars" >ORDINARY EXPRESS</h5>
+                                            <p className="fonts mt-3" >
+                                              <i class="bi bi-star-fill" ></i> 2.5 (+200 Ratings)
                                             </p>
                                             <p>
                                               <i class="bi bi-bus-front"></i> Live Tracking
