@@ -237,7 +237,8 @@ const MainImg = () => {
         <footer style={{ backgroundColor: '#404040', position: 'fixed', left: 0, bottom: 0, width: '100%', zIndex: 1000 }} className='pt-3 pb-1 mt-4'>
           <div className="container">
             <hr style={{ color: 'white', maxWidth:'100%', marginLeft:'90px', marginRight:'90px' }} />
-            <div className='d-flex  justify-content-center ' style={{ gap:'90px',color: 'white' }}>
+            {/* classname added  */}
+            <div className='d-flex  justify-content-center flex-wrap footer-main' style={{ gap:'90px',color: 'white' }}>
               <span>Copyrights 2024. Last updated on 2/21/2024</span>
               <span>Privacy Policy</span>
               <span>Terms and Conditions</span>

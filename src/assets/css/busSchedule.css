@@ -277,6 +277,10 @@ padding: 10px !important;
 
 
 @media (max-width: 767px) {
+  /* footer chnage css  */
+  .footer-main{
+    gap: 16px !important;
+  }
   .mobile-col {
     margin-top: 20px !important;
   }
