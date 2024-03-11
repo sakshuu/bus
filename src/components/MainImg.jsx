@@ -111,7 +111,7 @@ const MainImg = () => {
 
 
           <div class="container">
-              <nav class="navbar navbar-expand-lg navbar-sub ">
+              <nav class="navbar navbar-expand-lg navbar-sub " style={{boxShadow:'2px 2px 2px 2px #E8E8E8'}}>
                 <button
                   class="navbar-toggler toggle-icon"
                   type="button"
