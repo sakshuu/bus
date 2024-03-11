@@ -108,28 +108,9 @@ const MainImg = () => {
               quos
             </p>
           </div>
-          {/* <div className="container">
 
 
-        <nav class="navbar navbar-sub  navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        </div> */}
           <div class="container">
-            {/* <div className="container-home"> */}
-
               <nav class="navbar navbar-expand-lg navbar-sub ">
                 <button
                   class="navbar-toggler toggle-icon"
@@ -175,19 +156,13 @@ const MainImg = () => {
         className="form-control inp-filter"
       />
     </div>
-
                     </div>
-
-
-
-
                     <button type="submit" class="btn btn-danger px-4 h-25">
                       Search
                     </button>
                   </div>
                 </div>
               </nav>
-            {/* </div> */}
           </div>
         </div>
       </form>
@@ -196,11 +171,11 @@ const MainImg = () => {
 
 {/* cards start */}
       <div className="container" style={{marginTop:'100px', marginBottom:'100px'}} >
-<div className="row">
+{/* <div className="row"> */}
   {
-      data.map(item => 
-          <div className="col-md-4 col-sm-6 card-container">
-<div className="card p-1 mt-2" style={{boxShadow:'2px 2px 2px 2px #E8E8E8', maxWidth:'100%'}}>
+    data.map(item => 
+    <div className="d-flex gap-4 justify-space-between">
+<div className="card card-container p-1 mt-2" style={{boxShadow:'2px 2px 2px 2px #E8E8E8'}}>
   <div className="d-flex ">
 
 <div><img src={item?.img} alt=""  className="mt-4" width={110} /></div>
@@ -214,7 +189,7 @@ const MainImg = () => {
 </div>
           )
 }
-</div>
+{/* </div> */}
           </div>
 {/* card end */}
 
@@ -239,7 +214,7 @@ const MainImg = () => {
             <hr style={{ color: 'white', maxWidth:'100%', marginLeft:'90px', marginRight:'90px' }} />
             {/* classname added  */}
             <div className='d-flex  justify-content-center flex-wrap footer-main' style={{ gap:'90px',color: 'white' }}>
-              <span>Copyrights 2024. Last updated on 2/21/2024</span>
+              <span>Copyrights 2024. Last updated on : 06/03/2024</span>
               <span>Privacy Policy</span>
               <span>Terms and Conditions</span>
             </div>

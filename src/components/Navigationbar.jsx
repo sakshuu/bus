@@ -64,11 +64,11 @@ const Navigationbar = () => {
   <a class="dropdown-toggle nav-link active" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
     My Bookings
   </a>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item drop-text" href="#">Action</a></li>
+  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-my-books" style={{width:'4px'}} aria-labelledby="dropdownMenuButton1">
+    <li className="item-drop"><a class="dropdown-item drop-text" href="#">Action</a></li>
     <hr className="dropdown-divider" />
     
-    <li><a class="dropdown-item drop-text" href="#">Another action</a></li>
+    <li className="item-drop"><a class="dropdown-item drop-text" href="#">Another action</a></li>
   </ul>
 </div>
 
