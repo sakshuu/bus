@@ -167,6 +167,34 @@
   /* margin-bottom: 10px; */
   /* z-index: 3px; */
 }
+@media (max-width:1050px) {
+  .navbar-sub{
+    top: 90%;
+  position: absolute;
+  /* margin: auto !important; */
+  /* padding: auto !important; */
+  border-radius: 20px !important;
+  /* padding: 1% 6% 1% 6% !important; */
+  /* margin: 0% 2% 0% 2%; */
+  margin: auto !important;
+  padding: auto !important;
+  padding: 2% 2% !important;
+  padding-left: 12% !important;
+  /* height: 70px; */
+  background-color: white;
+  width: 90% !important;
+  z-index: 10 !important;
+  }
+  .inp-filter {
+    margin-top: 4px !important;
+    width: 100% !important;
+  }
+  .btn-search{
+    margin: auto;
+    padding: auto;
+  }
+}
+
 @media (max-width:600px) {
   .card-container{
     max-width: 330px !important;
