@@ -20,11 +20,15 @@
   /* margin: auto !important; */
   /* padding: auto !important; */
   border-radius: 20px !important;
-  padding: 4px 130px 0px 130px;
-  /* margin: 0px 20px 0px 20px; */
-  height: 70px;
+  /* padding: 1% 6% 1% 6% !important; */
+  /* margin: 0% 2% 0% 2%; */
+  margin: auto !important;
+  padding: auto !important;
+  padding: 1% 1% !important;
+  padding-left: 12% !important;
+  /* height: 70px; */
   background-color: white;
-  min-width: 100px !important;
+  width: 79vmax !important;
 }
 .card-container{
   width: 22rem !important;
@@ -38,9 +42,14 @@
 }
 .inp-main {
   position: relative;
-  width: 100%;
+  width: 100% !important;
 }
-
+.btn-search{
+  /* padding-left: -900px !important; */
+  /* margin-right: -900px !important; */
+  width: 50% !important;
+  height: 40px !important;
+}
 .calendar-icon {
   color: red; /* Set the color to red */
   position: absolute; /* Position the icon absolutely */
@@ -57,6 +66,7 @@
 }
 .inp-filter {
   text-align: center;
+  width: 15vmax !important;
 }
 
 .bi-geo-alt-fill {
@@ -157,7 +167,7 @@
   /* margin-bottom: 10px; */
   /* z-index: 3px; */
 }
-@media (max-width:440px) {
+@media (max-width:600px) {
   .card-container{
     max-width: 330px !important;
   }
@@ -174,12 +184,22 @@
     height: 37px !important;
     margin-top: -15px;
   }
+  .inp-filter {
+    width: 100% !important;
+  }
+  .btn-search{
+    margin: auto;
+    padding: auto;
+  }
+  /* .inp-main{
+    width: 100% !important;
+  } */
   .navbar-sub{
-    width: 100px;
+    /* width: 100px; */
     /* background-color: transparent !important; */
     padding: 15px 30px ;
     align-items: end;
-   min-width: 100vw !important;
+   width: 100% !important;
    margin: 0px !important;
    margin-left: -16px !important;
    z-index: 10 !important;
@@ -192,7 +212,7 @@
   }
   .navbar-inp{
    max-height: 100%;
-   min-width: 100px;
+   max-width: 100%;
 padding: 10px !important;
     margin-top: 10px !important;
     background-color: white !important;

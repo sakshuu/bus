@@ -118,10 +118,10 @@ const MainImg = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNavAltfilter"
                 >
-                  <span class="navbar-toggler-icon  "></span>
+                  <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltfilter">
-                  <div class="navbar-nav navbar-inp gap-4 ">
+                  <div class="navbar-nav navbar-inp gap-4">
                     <div className="inp-main">
                       <input
                         {...register("From", {
@@ -157,7 +157,7 @@ const MainImg = () => {
       />
     </div>
                     </div>
-                    <button type="submit" class="btn btn-danger px-4 h-25">
+                    <button type="submit" class="btn btn-danger px-4 btn-search">
                       Search
                     </button>
                   </div>
@@ -170,13 +170,12 @@ const MainImg = () => {
 
 
 {/* cards start */}
-      <div className="container" style={{marginTop:'100px', marginBottom:'100px'}} >
+      {/* <div className="container" style={{marginTop:'100px', marginBottom:'100px'}} >
 <div className="row align-items-start">
   {
     data.map(item => 
     <div className="col">
 
-      {/* </div> */}
 <div className="card card-container p-1 mt-2" style={{boxShadow:'2px 2px 2px 2px #E8E8E8'}}>
   <div className="d-flex ">
 
@@ -192,8 +191,32 @@ const MainImg = () => {
           )
 }
           </div>
-{/* </div> */}
+          </div> */}
+          <div className="container mt-3">
+        <div style={{ marginTop: "100px", marginBottom: "100px" }}>
+          <div className="row">
+            {data.map((item) => (
+              <div className="col-md-4 col-sm-12">
+                <div
+                  className="card p-3 m-2"
+                  style={{ boxShadow: "2px 2px 2px 2px #E8E8E8", height:
+                "100%", width:'90%'}}
+                >
+                  <div className="d-flex ">
+                    <div>
+                      <img src={item?.img} alt="" width={110} />
+                    </div>
+                    <div>
+                      <p style={{ fontWeight: "bold" }}>{item.title}</p>
+                      <p>{item?.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
+        </div>
+      </div>
 {/* card end */}
 
 
