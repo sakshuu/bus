@@ -196,15 +196,14 @@ const MainImg = () => {
         <div style={{ marginTop: "100px", marginBottom: "100px" }}>
           <div className="row">
             {data.map((item) => (
-              <div className="col-md-4 col-sm-12">
+              <div className="col-md-4  col-sm-12">
                 <div
                   className="card p-3 m-2"
-                  style={{ boxShadow: "2px 2px 2px 2px #E8E8E8", height:
-                "100%", width:'90%'}}
+                  style={{ boxShadow: "2px 2px 2px 2px #E8E8E8", width:'17rem'}}
                 >
                   <div className="d-flex ">
-                    <div>
-                      <img src={item?.img} alt="" width={110} />
+                    <div style={{paddingTop:'8%'}}>
+                      <img src={item?.img} alt=""  width={110} />
                     </div>
                     <div>
                       <p style={{ fontWeight: "bold" }}>{item.title}</p>
