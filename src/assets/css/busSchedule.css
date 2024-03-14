@@ -15,20 +15,23 @@
   color: white;
 }
 .navbar-sub {
-  top: 90%;
+  top: 92% !important;
   position: absolute;
   /* margin: auto !important; */
   /* padding: auto !important; */
   border-radius: 20px !important;
   /* padding: 1% 6% 1% 6% !important; */
   /* margin: 0% 2% 0% 2%; */
-  margin: auto !important;
-  padding: auto !important;
-  padding: 1% 1% !important;
+  /* margin: 0% 20% 0% 15% !important; */
+  left: 10% !important;
+  right: 10% !important;
+  /* padding: auto !important; */
+  /* padding: 1% 1% !important; */
   padding-left: 12% !important;
   /* height: 70px; */
   background-color: white;
-  width: 79vmax !important;
+  
+  width: 80% !important;
 }
 .card-container{
   width: 22rem !important;
@@ -176,13 +179,16 @@
   border-radius: 20px !important;
   /* padding: 1% 6% 1% 6% !important; */
   /* margin: 0% 2% 0% 2%; */
-  margin: auto !important;
-  padding: auto !important;
-  padding: 2% 2% !important;
-  padding-left: 12% !important;
-  /* height: 70px; */
+  /* margin: auto !important; */
+  /* padding: auto !important; */
+  /* padding: 2% 2% !important; */
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+  height: 60px;
+  left: 10% !important;
+  right: 10% !important;
   background-color: white;
-  width: 90% !important;
+  width: 80% !important;
   z-index: 10 !important;
   }
   .inp-filter {
@@ -227,9 +233,9 @@
     /* background-color: transparent !important; */
     padding: 15px 30px ;
     align-items: end;
-   width: 100% !important;
+   /* width: 0% !important; */
    margin: 0px !important;
-   margin-left: -16px !important;
+   /* margin-left: -16px !important; */
    z-index: 10 !important;
    /* padding-top: 20px !important; */
 
@@ -320,8 +326,26 @@ padding: 10px !important;
 .icon-filter{
   font-size: 18px !important;
 }
+/* .main-cards-booking{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+} */
 
-
+.main-cards-booking{
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+@media (max-width:940px) {
+  .main-cards-booking{
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 @media (max-width: 767px) {
