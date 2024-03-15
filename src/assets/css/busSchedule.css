@@ -335,7 +335,7 @@ padding: 10px !important;
 
 .main-cards-booking{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* flex-wrap: wrap; */
 }
 @media (max-width:940px) {

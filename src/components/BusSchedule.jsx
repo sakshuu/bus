@@ -14,7 +14,7 @@ const BusSchedule = () => {
     <>
       <div className="container booking-container">
         <div className="row" style={{marginBottom:'100px'}}>
-          <div className="col-md-3">
+          <div className="col-md-3 col-sm-12">
             <div className="filter">
               <div>Filter</div>
               <div className="t-color fonts">Clear All</div>
@@ -131,7 +131,7 @@ const BusSchedule = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-9 col-sm-12">
           
 
                                    <CardTickets />

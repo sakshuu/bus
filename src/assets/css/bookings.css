@@ -8,6 +8,29 @@
     margin-top: 30%;
     /* background-color: beige; */
 }
+/* new added */
+
+.setascorrected{
+    /* d-flex justify-content-center flex-wrap p-1 */
+    padding: 2px !important;
+    display: flex;
+    justify-content: center;
+    /* align-items: baseline; */
+    flex-wrap: wrap;
+}
+
+@media (max-width:771px) and (min-width:999px) {
+    .setascorrected{
+        padding: 0px;
+        display: flex !important;
+        justify-content: flex-start !important;
+    }
+    .setasarrange{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;  
+    }
+}
+
 .card-passenger{
     /* margin-top: 10px; */
     margin-bottom: 30px;

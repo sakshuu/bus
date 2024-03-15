@@ -192,7 +192,7 @@ const MainImg = () => {
 }
           </div>
           </div> */}
-          <div className="container mt-3">
+          {/* <div className="container mt-3">
         <div style={{ marginTop: "100px", marginBottom: "100px" }}>
           <div className="row">
             {data.map((item) => (
@@ -215,7 +215,7 @@ const MainImg = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 {/* card end */}
 
 

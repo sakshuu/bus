@@ -122,7 +122,7 @@ const Navigationbar = () => {
       </nav>
 
       {/* {showbusComponent ? ( */}
-        {/* <MainImg /> */}
+        <MainImg />
       {/* ) : ( */}
 
       <div

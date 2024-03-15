@@ -9,13 +9,13 @@ const Booking = () => {
 
 
   return <>
-  <div className="card  p-2 m-2" >
+  <div className="card p-1 m-2" >
     <div className="row mt-3">
-        <div className="col-md-3 col-sm-6 ">
+        <div className="col-md-3 col-sm-12 setasarrange">
 <Seats/>
         </div>
-        <div className="col-md-9 col-sm-6">
-          <div className='card-passenger'>
+        <div className="col-md-9 col-sm-12">
+          {/* <div className='card-passenger'>
           <i class="bi bi-record-circle-fill"></i>
           <div className='lines-card'></div>
           <i class="bi bi-record-circle-fill"></i>
@@ -27,7 +27,7 @@ const Booking = () => {
 <span className='fonts'>03:30 hours</span>
 <span className='t-bold'>07:30 am</span>
           <h6>Mumbai</h6>
-          </div>
+          </div> */}
 <PassengerInfo/>
           </div>
           </div>
