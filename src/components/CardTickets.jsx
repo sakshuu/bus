@@ -133,7 +133,7 @@ const CardTickets = () => {
 
                                                     <button
                                                   type="button"
-                                                  class="btn btn-danger btn-sm btn-booking mb-2"   onClick={toggleBookingCard}>
+                                                  class="btn btn-danger btn-sm btn-booking mb-2"  style={{display:'block'}} onClick={toggleBookingCard}>
                                                   BOOK NOW
                                                 </button>
 {/* cancel btn */}
@@ -145,9 +145,11 @@ const CardTickets = () => {
                                                   
 
                                                 {/* <Booking /> */}
+<div >
 
+</div>
                                               </div>
-                                              <p className="t-color text-center">View Step</p>
+                                              <a style={{display:'block'}} className="t-color text-center" >View Step</a>
                                             </div>
                                           </div>
                                         </div>

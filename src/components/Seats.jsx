@@ -1,5 +1,6 @@
 import React from 'react'
 import { seat } from '../assets/img'
+import  "./../assets/css/setas.css";
 
 const Seats = () => {
     const handlecolor = () => {

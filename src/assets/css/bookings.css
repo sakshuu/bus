@@ -49,21 +49,27 @@ border: 1px solid rgb(195, 185, 185);
 /* margin-top: 100px; */
 position: relative;
 }
-
+/* only chnages in this line for icon */
+/* strat */
 .bi-arrow-right-circle-fill{
     color: red;
-    /* margin-right: -500px; */
+
+    /* text-align: justify; */
+    /* margin-right: -100px; */
     position: absolute;
-    top: 27px;
-    left: 500px;
+    /* top: 50%; */
+    right: 50%;
+    left: 50%;
+    
 }
-@media (max-width:360px) {
+@media (max-width:2000px) and (min-width:1000px)  {
     .bi-arrow-right-circle-fill{
         position: absolute !important;
-        top: 537px !important;
-        left: 130px !important;
+        right: 40% !important;
+        left: 60% !important;
     }
 }
+/* end */
 .card-lines{
     display: flex;
     margin-top: -30px;
