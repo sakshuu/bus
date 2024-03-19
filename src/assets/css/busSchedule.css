@@ -84,7 +84,7 @@
 
 /* booking */
 
-/* drop new css */
+/* drop new css start */
 .drop {
   border: 1px solid rgb(120, 119, 119);
   position: relative;
@@ -104,8 +104,8 @@
   display: inline-block;
   padding: 4px;
   transform: rotate(45deg);
-}s
-
+}
+/* end */
 .remove-default-icon::after {
   background-image: none !important;
 }
