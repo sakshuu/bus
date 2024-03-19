@@ -86,25 +86,35 @@
 
 /* drop new css start */
 .drop {
-  border: 1px solid rgb(120, 119, 119);
   position: relative;
-  padding: 4px !important;
-  padding-right: 30px; /* Adjust this value based on the width of your arrow */
-  color: rgb(147, 145, 145);
-  font-size: 16px !important;
+  /* padding: 10px !important; */
 }
+
 .drop::after {
   content: "";
   position: absolute;
-  right: 10px; /* Adjust this value to position the arrow */
-  top: 28% !important;
+  left: 85%;
+  top: 35%;
   transform: translateY(-50%);
   border: solid black;
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 4px;
-  transform: rotate(45deg);
+  transform: rotate(45deg); /* Rotate the arrow */
 }
+
+.bi-caret-down-fill {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.inp {
+  border: none;
+}
+
+
 /* end */
 .remove-default-icon::after {
   background-image: none !important;

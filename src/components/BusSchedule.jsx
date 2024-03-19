@@ -59,9 +59,34 @@ const BusSchedule = () => {
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </div> */}
-              <div class="dropdown">
-  <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
---any--
+              {/* <div class="dropdown">
+  <input class="dropdown-toggle drop"  id="dropdownMenuButton1" data-bs-toggle="dropdown" placeholder="--any--" />
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> */}
+{/* <div class="dropdown">
+  <input class="dropdown-toggle drop" type="input" id="dropdownMenuButton1" data-bs-toggle="dropdown" value="Dropdown button"/>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> */}
+{/* <div class="dropdown">
+  <input class="dropdown-toggle drop"  id="dropdownMenuButton1" data-bs-toggle="dropdown" value="--any--"/>   <i class="bi bi-caret-down-fill"></i>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> */}
+            <div class="dropdown">
+  <div class="dropdown-toggle drop" id="dropdownMenuButton1" data-bs-toggle="dropdown" value="--any--">
+    <input class="dropdown-toggle" readonly value="--any--" />
+    {/* <i class="bi bi-caret-down-fill"></i> */}
   </div>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -74,36 +99,10 @@ const BusSchedule = () => {
             <div className="sub-next">
               <h6>Bus service Type</h6>
 
-              {/* <div class="dropdown custom-input-group ">
-                <input
-                  class=" custom-input-group w-100 dropdown-toggle dropdown-main"
-                  type="text"
-                  id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown"
-                  placeholder="--any--"
-                />
-                <i class="bi bi-caret-down-fill"></i>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item mx-4" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item mx-4" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item mx-4" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
-                            <div class="dropdown">
-  <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
---any--
+              <div class="dropdown">
+  <div class="dropdown-toggle drop" id="dropdownMenuButton1" data-bs-toggle="dropdown" value="--any--">
+    <input class="dropdown-toggle" readonly value="--any--" />
+    {/* <i class="bi bi-caret-down-fill"></i> */}
   </div>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -113,36 +112,10 @@ const BusSchedule = () => {
 </div>
 
               <h6 className="mt-4">Bus service Type</h6>
-              {/* <div class="dropdown custom-input-group ">
-                <input
-                  class=" custom-input-group w-100 dropdown-toggle dropdown-main"
-                  type="text"
-                  id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown"
-                  placeholder="--any--"
-                />
-                <i class="bi bi-caret-down-fill"></i>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item mx-4" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item mx-4" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item mx-4" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
-                            <div class="dropdown">
-  <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
---any--
+              <div class="dropdown">
+  <div class="dropdown-toggle drop" id="dropdownMenuButton1" data-bs-toggle="dropdown" value="--any--">
+    <input class="dropdown-toggle" readonly value="--any--" />
+    {/* <i class="bi bi-caret-down-fill"></i> */}
   </div>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
