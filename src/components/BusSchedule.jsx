@@ -22,7 +22,7 @@ const BusSchedule = () => {
 
             <div className="sub-filter">
               <h6>Bus service Type</h6>
-              <div class="dropdown custom-input-group ">
+              {/* <div class="dropdown custom-input-group ">
                 <input
                   class=" custom-input-group w-100 dropdown-toggle dropdown-main"
                   type="text"
@@ -48,13 +48,33 @@ const BusSchedule = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
+              {/* <div class="dropdown">
+                <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                  Dropdown button
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div> */}
+              <div class="dropdown">
+  <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+--any--
+  </div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
             </div>
 
             <div className="sub-next">
               <h6>Bus service Type</h6>
 
-              <div class="dropdown custom-input-group ">
+              {/* <div class="dropdown custom-input-group ">
                 <input
                   class=" custom-input-group w-100 dropdown-toggle dropdown-main"
                   type="text"
@@ -80,10 +100,20 @@ const BusSchedule = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
+                            <div class="dropdown">
+  <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+--any--
+  </div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
 
               <h6 className="mt-4">Bus service Type</h6>
-              <div class="dropdown custom-input-group ">
+              {/* <div class="dropdown custom-input-group ">
                 <input
                   class=" custom-input-group w-100 dropdown-toggle dropdown-main"
                   type="text"
@@ -109,7 +139,17 @@ const BusSchedule = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
+                            <div class="dropdown">
+  <div class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+--any--
+  </div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
 
               <h6 className="mt-4 mb-3">Boarding Time</h6>
               <div className="slot-main">
